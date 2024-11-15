@@ -7,5 +7,5 @@ function toggleMenu() {
     });
 
     const button = document.querySelector('button');
-    button.textContent = button.textContent === 'Показать все' ? 'Скрыть' : 'Показать все';
+    button.textContent = button.textContent === 'Скрыть' ? 'Показать все' : 'Скрыть';
   }
