@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main>
@@ -34,17 +35,17 @@
             <div class="item">
                 <img src="img/sony.svg" alt="Sony">
             </div>
-            <div class="item tohide">
-                <img src="img/lenovo.svg" alt="Sony">
+            <div class="hidden">
+                <img src="img/lenovo.svg" alt="Lenovo">
             </div>
-            <div class="item tohide">
-                <img src="img/samsung.svg" alt="Sony">
+            <div class="hidden">
+                <img src="img/samsung.svg" alt="Samsung">
             </div>
-            <div class="item tohide">
-                <img src="img/apple.svg" alt="Sony">
+            <div class="hidden">
+                <img src="img/apple.svg" alt="Apple">
             </div>
         </div>
-        <button class="show-all"> <img src="img/pointers.svg" alt=""> Показать все</button>
+        <button onclick="toggleMenu()" class="show-all"> <img src="img/pointers.svg" alt=""> Показать все</button>
     </main>
 </body>
 </html>

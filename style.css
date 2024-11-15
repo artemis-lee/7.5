@@ -49,5 +49,8 @@ h1{
     font-family: TT Lakes-Regular;
   }
   
+  .hidden {
+    display: none;
+  }
 
   
