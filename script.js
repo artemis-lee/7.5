@@ -1,11 +1,25 @@
+const hiddenItems = document.querySelectorAll('.menu .hidden');
+const buttonText = document.querySelector('.btn-text');
+const iconBtn = document.querySelector('.icon');
+
 function toggleMenu() {
+  buttonText.innerText =
+    buttonText.innerText === 'Скрыть' ? 'Показать все' : 'Скрыть';
 
-    const hiddenItems = document.querySelectorAll('.menu .hidden');
+  hiddenItems.forEach((item) => {
+    item.style.display =
+      item.style.display === 'none' || item.style.display === ''
+        ? 'block'
+        : 'none';
+  });
 
-    hiddenItems.forEach(item => {
-      item.style.display = item.style.display === 'none' || item.style.display === '' ? 'block' : 'none';
-    });
 
-    const button = document.querySelector('button');
-    button.textContent = button.textContent === 'Скрыть' ? 'Показать все' : 'Скрыть';
+  if (iconBtn.className === 'icon') {
+    iconBtn.className = 'icon closed';
+  } else {
+    iconBtn.className = 'icon';
   }
+
+  iconBtn.classList.toggle('rotated');
+
+}
