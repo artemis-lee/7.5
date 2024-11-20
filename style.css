@@ -123,8 +123,8 @@ h1{
         padding: 20px;
       }
 
-      .swiper-pagination {
-        margin-top: 40px; /* Отодвигает табуляцию от верхнего блока */
+      .imag-slider .swiper-pagination {
+        bottom: 0;
       }
 
       .image-slider .swiper-pagination-bullet {
