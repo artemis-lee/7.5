@@ -56,7 +56,7 @@ h1{
     font-family: TT Lakes-Regular;
   }
   
-  .wrapper {
+  .wrapper, .swiper-container {
     display: none;
   }
 
@@ -115,7 +115,7 @@ h1{
     }
   
     @media (min-width: 320px) and (max-width: 727px) {
-      .wrapper {
+      .wrapper, .swiper-container {
         display: block !important;
       }
       .menu, .show-all {
