@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
 </head>
 <body>
     <main>
@@ -50,11 +54,64 @@
             <div class="hidden diff">
                 <img src="img/sony.svg" alt="Sony">
             </div>
+            <div class="item_small">
+                <img src="/img/acer720.svg" alt="">
+            </div>
+            <div class="item_small">
+                <img src="/img/apple720.svg" alt="">
+            </div>
+            <div class="item_small">
+                <img src="/img/bosch720.svg" alt="">
+            </div>
+            <div class="item_small">
+                <img src="/img/hp720.svg" alt="">
+            </div>
+            <div class="item_small">
+                <img src="/img/lenovo720.svg" alt="">
+            </div>
+            <div class="item_small">
+                <img src="/img/samsung720.svg" alt="">
+            </div>
     </div>
         <button onclick="toggleMenu()" class="show-all">
             <img class="icon" src="img/pointers.svg" alt="">
              <span class="btn-text">Показать все</span>
         </button>
+        <div class="wrapper">
+            <div class="image-slider swiper-container">
+                <div class="image-slider__wrapper swiper-wrapper">
+                    <div class="image-slider__slide swiper-slide">
+                        <img src="/img/acer.svg" alt="">
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <img src="/img/apple.svg" alt="">
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <img src="/img/bosch.svg" alt="">
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <img src="/img/hp.svg" alt="">
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <img src="/img/lenovo.svg" alt="">
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                        <img src="/img/samsung.svg" alt="">
+                    </div>
+                <!-- </div>
+                <div class="swiper-button-prev">
+    
+                </div>
+                <div class="swiper-button-next">
+    
+                </div> -->  
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+ 
     </main>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
