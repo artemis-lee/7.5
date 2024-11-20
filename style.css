@@ -105,15 +105,7 @@ h1{
       display: block;
     }
   }
-  
-  .menu {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, auto);
-      gap: 10px;
-      padding: 15px;
-    }
-  
+
     @media (min-width: 320px) and (max-width: 727px) {
       .wrapper, .swiper-container {
         display: block !important;
